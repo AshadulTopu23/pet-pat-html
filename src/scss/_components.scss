@@ -1,0 +1,267 @@
+// button
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: $primary;
+    color: $n0;
+    font-family: $font-otomanopee;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    transition: $transition;
+    border-radius: 50rem;
+    border: 1px solid $n20;
+
+    @include screen(lg) {
+        padding: 12px 24px;
+    }
+
+    &:hover {
+        background: $secondary;
+    }
+}
+
+// .btn-outline {
+//     @extend .btn-primary;
+//     border: 1px solid $n0;
+//     color: $n0;
+//     background: transparent;
+
+//     &:hover {
+//         background: $primary;
+//         color: $n0;
+//     }
+// }
+
+// .btn-secondary {
+//     @extend .btn-primary;
+//     background: $secondary;
+//     color: $n0;
+
+//     &:hover {
+//         background: $primary;
+//     }
+// }
+
+// .circle-btn {
+//     @include box(48);
+//     position: relative;
+//     z-index: 1;
+// }
+
+
+// .play-btn {
+//     @include box(48);
+//     position: relative;
+//     z-index: 10;
+//     overflow: visible;
+
+//     @include screen(md) {
+//         @include box(60);
+//     }
+
+//     @include screen(lg) {
+//         @include box(80);
+//     }
+
+//     &::after,
+//     &::before {
+//         content: '';
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         border: 4px solid $n40;
+//         border-radius: inherit;
+//         z-index: -100;
+//         animation: scale 5s infinite;
+
+//         @include screen(md) {
+//             border-width: 8px;
+//         }
+
+//         @include screen(lg) {
+//             border-width: 12px;
+//         }
+//     }
+
+//     &::after {
+//         animation-delay: 3s;
+//     }
+// }
+
+// // accordion area
+// .accordion-area {
+//     .accordion-item {
+//         transition: $transition;
+
+//         .accordion-header {
+//             cursor: pointer;
+//             transition: $transition;
+//             border-color: $n40 !important;
+//             color: $n700;
+
+//             .accordion-icon {
+//                 position: relative;
+//                 width: 20px;
+//                 height: 20px;
+//                 z-index: 1;
+
+//                 &::before {
+//                     content: '\e136';
+//                     font-family: 'phosphor';
+//                     font-weight: 800;
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     width: 100%;
+//                     height: 100%;
+//                     z-index: -1;
+//                     transition: $transition;
+//                 }
+//             }
+//         }
+
+//         .accordion-content {
+//             max-height: 0;
+//             overflow: hidden;
+//             padding: 0;
+//             padding-top: 0;
+//             transition: max-height 0.5s ease, padding-top 0.5s ease;
+//         }
+
+//         &.show {
+
+//             .accordion-header {
+//                 border-color: $secondary !important;
+//                 color: $secondary;
+
+//                 .accordion-icon {
+//                     &::before {
+//                         content: '\e13c';
+//                     }
+//                 }
+//             }
+
+//             .accordion-content {
+//                 transition: max-height 0.5s ease, padding-top 0.5s ease;
+//                 padding-top: 24px;
+//                 max-height: max-content;
+//             }
+//         }
+//     }
+
+//     &.accordion-style-2 {
+//         .accordion-item {
+//             &.show {
+//                 .accordion-header {
+//                     color: $n700 !important;
+//                 }
+
+//                 .accordion-content {
+//                     padding-top: 32px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // input type checkbox
+// .input-radiobox {
+//     .checkbox {
+//         cursor: pointer;
+//         position: relative;
+//         @include box(24);
+//         border: 1px solid $n700;
+
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             @include box(16);
+//             border: 1px solid $n700;
+//         }
+//     }
+
+//     input:checked+.checkbox {
+//         border: 1px solid $primary;
+
+//         &::after {
+//             border: 1px solid $primary;
+//             background: $primary;
+//         }
+//     }
+// }
+
+// .input-radiobox2 {
+//     .checkbox {
+//         cursor: pointer;
+//         position: relative;
+//         border: 1px solid $n40;
+//         transition: $transition;
+//         color: $n600;
+//     }
+
+//     input:checked+.checkbox {
+//         border: 1px solid $primary;
+//         background: $primary2;
+//         color: $primary;
+//     }
+// }
+
+// .input-checkbox {
+//     .checkbox {
+//         cursor: pointer;
+//         position: relative;
+//         border: 1px solid $n40;
+//         transition: $transition;
+//         color: $n600;
+//         width: 16px;
+//         height: 16px;
+
+//     }
+
+//     input:checked+.checkbox {
+//         border: 1px solid $primary;
+//         background: $primary2;
+//         color: $primary;
+
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             top: 2px;
+//             left: 6px;
+//             width: 4px;
+//             height: 10px;
+//             border: solid $secondary;
+//             border-width: 0 2px 2px 0;
+//             transform: rotate(45deg);
+//         }
+//     }
+// }
+
+// .focus-primary {
+
+//     &:focus,
+//     &:focus-within,
+//     &:focus-visible {
+//         border-color: $primary !important;
+//     }
+// }
+
+// .focus-secondary {
+
+//     &:focus,
+//     &:focus-within,
+//     &:focus-visible {
+//         border-color: $secondary !important;
+//     }
+// }

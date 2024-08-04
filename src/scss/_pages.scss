@@ -1,0 +1,387 @@
+.hero-section {
+    // .bg-banner {
+    //     &::after {
+    //         content: '';
+    //         position: absolute;
+    //         width: 100%;
+    //         height: 100%;
+    //         top: 0;
+    //         left: 0;
+    //         z-index: -1;
+    //         background: $primary2;
+    //         opacity: .85;
+    //     }
+    // }
+    // .hero-banner{
+
+    //     .hero-thumb{
+
+    //     }
+    // }
+}
+
+// .circle-text-area {
+//     &.style2 {
+//         transform: translate(-100%, 0%);
+
+//         @include screen(lg) {
+//             transform: translate(-50%, 0%);
+//         }
+
+//         @include screen(3xl) {
+//             transform: translate(0%, 0%);
+//         }
+//     }
+// }
+
+// .circle-text-body {
+//     width: 120px;
+//     height: 120px;
+//     background: $n0;
+//     box-shadow: $shadow-1;
+
+//     @include screen(md) {
+//         width: 140px;
+//         height: 140px;
+//     }
+
+//     @include screen(lg) {
+//         width: 180px;
+//         height: 180px;
+//         transform: translate(-30%, 50%);
+//     }
+
+//     @include screen(3xl) {
+//         width: 200px;
+//         height: 200px;
+//         transform: translate(-50%, 50%);
+
+//     }
+
+//     .circle-text-shape {
+//         @include box(56);
+//         background: $primary;
+
+//         @include screen(lg) {
+//             @include box(80);
+//         }
+
+//         @include screen(3xl) {
+//             @include box(100);
+//         }
+//     }
+
+//     .text-style {
+//         position: absolute;
+//         height: 100%;
+//         width: 100%;
+//         animation: rotateText 10s linear infinite;
+//         z-index: 1;
+//     }
+// }
+
+// // cta-section
+// .cta-section {
+//     @include screen(lg) {
+//         .cta-card {
+//             margin-top: -250px;
+//         }
+//     }
+
+//     @include screen(xl) {
+//         .cta-card {
+//             margin-top: -300px;
+//         }
+//     }
+
+//     @include screen(3xl) {
+//         .cta-card {
+//             margin-top: -350px;
+//         }
+//     }
+// }
+
+// .project-card {
+//     .project-overlay {
+//         opacity: 0;
+//         transition: $transition;
+//         transform: scale(0);
+//     }
+
+//     &:hover {
+//         .project-overlay {
+//             opacity: 1;
+//             transform: scale(1);
+//         }
+//     }
+// }
+
+// .project-swiper {
+//     .swiper-slide-active {
+//         .project-overlay {
+//             opacity: 1;
+//             transform: scale(1);
+//         }
+//     }
+// }
+
+// // blog section
+// .blog-card {
+//     .blog-img {
+//         transition: $transition-slow;
+//     }
+
+//     &:hover {
+//         .blog-img {
+//             transform: scale(1.1) rotate(5deg);
+//         }
+//     }
+// }
+
+
+// // inner page
+// .inner-hero-section {
+//     .bg-banner {
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             top: 0;
+//             left: 0;
+//             z-index: 1;
+//             background: $n700;
+//             opacity: .85;
+//         }
+//     }
+// }
+
+// // how it work
+// .how-it-work {
+//     .how-it-work-card {
+//         .overlay {
+//             transform: translateY(20%);
+//         }
+//     }
+// }
+
+// .team-member-section {
+//     .bg-banner {
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             top: 0;
+//             left: 0;
+//             z-index: 1;
+//             background: $n700;
+//             opacity: .8;
+//         }
+//     }
+// }
+
+// .team-card {
+//     border-color: $n60 !important;
+
+//     .team-thumb {
+//         border-color: $n60 !important;
+
+//         .overlay {
+//             opacity: 0;
+//             background: $gradient-3;
+//         }
+//     }
+
+//     &:hover {
+//         border-color: $secondary !important;
+
+//         .team-thumb {
+//             border-color: $secondary !important;
+
+//             .overlay {
+//                 opacity: 1;
+//             }
+//         }
+//     }
+// }
+
+// .social-link-wrapper {
+//     transform: translateY(20px);
+
+//     .social-items {
+//         transform: rotateY(-90deg);
+
+//         .social-item {
+//             @include box(32);
+//             color: $secondary;
+//             transition: $transition;
+
+//             &:hover {
+//                 color: $n0;
+//                 background: $secondary;
+//             }
+//         }
+
+//         &.active {
+//             transform: rotateY(0deg)
+//         }
+//     }
+
+//     .social-btn {
+//         @include box(40);
+
+//     }
+// }
+
+
+// .mini-cta {
+//     .bg-banner {
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             top: 0;
+//             left: 0;
+//             z-index: 1;
+//             background: $n700;
+//             opacity: .9;
+//         }
+//     }
+// }
+
+
+// //renovation-section
+// // reservation form
+// .package-input {
+//     border: 1px solid $n40;
+//     transition: border-color 0.3s;
+
+//     &.focused {
+//         border-color: $primary !important;
+//     }
+// }
+
+// .renovation-date-input-container {
+//     display: block;
+//     margin: 0;
+
+//     .renovation-date-container {
+//         width: 100%;
+//         border: unset;
+//         box-shadow: unset;
+//         border-radius: unset;
+//         background: unset;
+
+//         .renovation-date-header {
+//             background: unset;
+//             justify-content: start;
+//             gap: 10px;
+//             color: $n700;
+//             margin-bottom: 24px;
+//             padding: 0;
+
+//             @include screen(sm) {
+//                 gap: 16px;
+//             }
+
+//             @include screen(lg) {
+//                 gap: 20px;
+//             }
+
+//             .month-year {
+//                 font-size: 18px;
+//                 font-weight: 600;
+
+//                 @include screen(sm) {
+//                     font-size: 20px
+//                 }
+
+//                 @include screen(lg) {
+//                     font-size: 24px
+//                 }
+//             }
+
+//             button {
+//                 @include box(32);
+//                 color: $n700;
+//                 border: 1px solid $n40;
+//                 transition: $transition;
+
+//                 &:hover {
+//                     color: $n0;
+//                     background: $primary;
+//                     border-color: $primary;
+//                 }
+
+//                 @include screen(lg) {
+//                     @include box(40);
+//                 }
+//             }
+
+//         }
+
+//         .renovation-date-weekdays {
+//             padding: 0;
+//             background: unset;
+//             justify-content: space-between;
+//             margin-bottom: 16px;
+
+//             div {
+//                 padding: 0;
+//                 font-size: 16px;
+//                 color: $n600;
+//                 font-weight: 600;
+
+//                 @include screen(sm) {
+//                     font-size: 18px;
+//                 }
+//             }
+//         }
+
+//         .renovation-date-days {
+//             justify-content: space-between;
+
+//             div {
+//                 padding: 8px;
+//                 border-radius: 4px;
+//                 border: 0.5px solid $n40;
+//                 font-size: 16px;
+//                 font-weight: 600;
+//                 color: $n600;
+
+//                 @include screen(xs) {
+//                     padding: 8px;
+//                 }
+
+//                 @include screen(sm) {
+//                     padding: 16px;
+//                     font-size: 18px;
+//                 }
+
+//                 @include screen(lg) {
+//                     padding: 20px;
+//                 }
+//             }
+
+//             .selected {
+//                 background: $primary2;
+//                 color: $primary;
+//                 border: 0.5px solid $primary;
+//             }
+//         }
+//     }
+// }
+
+// .credit-card-form {
+//     height: 0 !important;
+//     visibility: hidden;
+//     overflow: hidden;
+//     transition: height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+//     &.active {
+//         height: auto !important;
+//         visibility: visible;
+//     }
+// }
