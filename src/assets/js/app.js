@@ -84,35 +84,204 @@ document.addEventListener('DOMContentLoaded', () => {
     // })
 
 
-    // Select all elements with the class 'banner-element'
-    var bannerElements = document.querySelectorAll('.banner-element');
 
-    // Function to handle the scroll event
-    function handleScroll() {
-        var scrollTop = window.scrollY || window.pageYOffset;
-        var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-        var scrollPosition = scrollTop / scrollHeight;
-
-        var windowWidth = window.innerWidth;
-        var rotatePosition = scrollPosition * 0.5 * windowWidth;
-        var absPosition = scrollPosition * 1.5 * windowWidth;
-
-        bannerElements.forEach(function (element) {
-            if (element.classList.contains('left')) {
-                element.style.transform = 'rotate(' + rotatePosition / 4 + 'deg)';
-                element.style.left = absPosition + 'px';
-            } else if (element.classList.contains('right')) {
-                element.style.transform = 'rotate(' + -rotatePosition / 4 + 'deg)';
-                element.style.right = absPosition + 'px';
-            } else if (element.classList.contains('bottom')) {
-                element.style.transform = 'rotate(' + -rotatePosition / 4 + 'deg)';
-                element.style.bottom = absPosition + 'px';
-            }
-        });
+    // Box Style 
+    const targetBtn = document.querySelectorAll('.box-style')
+    if (targetBtn) {
+        targetBtn.forEach((element) => {
+            element.addEventListener('mousemove', (e) => {
+                const x = e.offsetX + 'px';
+                const y = e.offsetY + 'px';
+                element.style.setProperty('--x', x);
+                element.style.setProperty('--y', y);
+            })
+        })
     }
 
-    // Add the scroll event listener to the window
-    window.addEventListener('scroll', handleScroll);
+
+
+    // Select all elements with the class 'banner-element'
+    // var bannerElements = document.querySelectorAll('.banner-element');
+
+    // // Function to handle the scroll event
+    // function handleScroll() {
+    //     let scrollTop = window.scrollY || window.pageYOffset;
+    //     let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    //     let scrollPosition = scrollTop / scrollHeight;
+
+    //     let windowWidth = window.innerWidth;
+    //     let rotatePosition = scrollPosition * 0.5 * windowWidth;
+    //     let absPosition = scrollPosition * 1.5 * windowWidth;
+
+    //     bannerElements.forEach(function (element) {
+    //         if (element.classList.contains('elementLeft')) {
+    //             element.style.left = absPosition + 'px';
+    //         } else if (element.classList.contains('elementRight')) {
+    //             element.style.right = absPosition + 'px';
+    //         } else if (element.classList.contains('elementBottom')) {
+    //             element.style.bottom = absPosition + 'px';
+    //         } else if (element.classList.contains('elementTop')) {
+    //             element.style.top = absPosition + 'px';
+    //         } else if (element.classList.contains('rotateLeft')) {
+    //             element.style.transform = 'rotate(' + rotatePosition / 4 + 'deg)';
+    //         } else if (element.classList.contains('rotateRight')) {
+    //             element.style.transform = 'rotate(' + -rotatePosition / 4 + 'deg)';
+    //         }
+    //     });
+    // }
+
+    // // Add the scroll event listener to the window
+    // window.addEventListener('scroll', handleScroll);
+
+
+    // // Function to handle the scroll and intersection events
+    // function handleBannerElements(entries, observer) {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             // Calculate scroll position based on intersection ratio
+    //             console.log('Element is intersecting:', entry.target);
+    //             let scrollPosition = entry.intersectionRatio;
+    //             console.log('Intersection ratio:', scrollPosition);
+
+
+    //             let windowWidth = window.innerWidth;
+    //             console.log('Window width:', windowWidth);
+    //             let rotatePosition = scrollPosition * 0.5 * windowWidth;
+    //             // console.log('Rotate position:', rotatePosition);
+    //             let absPosition = scrollPosition * 1.5 * windowWidth;
+    //             console.log('Abs position:', absPosition);
+    //             // Apply styles based on classes
+    //             // if (entry.target.classList.contains('elementLeft')) {
+    //             //     entry.target.style.left = absPosition + 'px';
+    //             // } else if (entry.target.classList.contains('elementRight')) {
+    //             //     entry.target.style.right = absPosition + 'px';
+    //             // } else if (entry.target.classList.contains('elementBottom')) {
+    //             //     entry.target.style.bottom = absPosition + 'px';
+    //             // } else if (entry.target.classList.contains('elementTop')) {
+    //             //     entry.target.style.top = absPosition + 'px';
+    //             // } else if (entry.target.classList.contains('rotateLeft')) {
+    //             //     entry.target.style.transform = 'rotate(' + rotatePosition / 4 + 'deg)';
+    //             // } else if (entry.target.classList.contains('rotateRight')) {
+    //             //     entry.target.style.transform = 'rotate(' + -rotatePosition / 4 + 'deg)';
+    //             // }
+    //         }
+    //     });
+    // }
+
+    // // Set up Intersection Observer options
+    // let observerOptions = {
+    //     threshold: [0, 0.25, 0.5, 0.75, 1] // Trigger at various points of intersection
+    //     // threshold: 0.1
+    // };
+
+    // // Create an Intersection Observer instance
+    // let observer = new IntersectionObserver(handleBannerElements, observerOptions);
+
+    // // Select all elements with the class 'banner-element'
+    // let bannerElements = document.querySelectorAll('.banner-element');
+
+    // // Observe each banner element
+    // bannerElements.forEach(function (element) {
+    //     observer.observe(element);
+    // });
+
+
+    // // Select all elements with the class 'banner-element'
+    // const bannerElements = document.querySelectorAll('.banner-element');
+
+    // // Function to handle the animation
+    // function animateElement(element, intersectionRatio) {
+    //     let windowWidth = window.innerWidth;
+    //     let scrollPosition = intersectionRatio;
+    //     let rotatePosition = scrollPosition * 0.5 * windowWidth;
+    //     let absPosition = scrollPosition * 1.5 * windowWidth;
+
+    //     if (element.classList.contains('elementLeft')) {
+    //         element.style.left = absPosition + 'px';
+    //     } else if (element.classList.contains('elementRight')) {
+    //         element.style.right = absPosition + 'px';
+    //     } else if (element.classList.contains('elementBottom')) {
+    //         element.style.bottom = absPosition + 'px';
+    //     } else if (element.classList.contains('elementTop')) {
+    //         element.style.top = absPosition + 'px';
+    //     } else if (element.classList.contains('rotateLeft')) {
+    //         element.style.transform = 'rotate(' + rotatePosition / 4 + 'deg)';
+    //     } else if (element.classList.contains('rotateRight')) {
+    //         element.style.transform = 'rotate(' + -rotatePosition / 4 + 'deg)';
+    //     }
+    // }
+
+    // // Create an Intersection Observer
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             animateElement(entry.target, entry.intersectionRatio);
+    //         }
+    //     });
+    // }, {
+    //     threshold: new Array(101).fill(0).map((_, i) => i / 100)  // Create thresholds from 0 to 1 in 0.01 steps
+    // });
+
+    // // Observe each banner element
+    // bannerElements.forEach(element => {
+    //     observer.observe(element);
+    // });
+
+
+    // // Select all elements with the class 'banner-element'
+    // const bannerElements = document.querySelectorAll('.banner-element');
+
+    // // Function to handle the animation
+    // function animateElement(element, scrollPosition) {
+    //     let windowWidth = window.innerWidth;
+    //     let rotatePosition = scrollPosition * 0.5 * windowWidth;
+    //     let absPosition = scrollPosition * 1.5 * windowWidth;
+
+    //     if (element.classList.contains('elementLeft')) {
+    //         element.style.left = absPosition + 'px';
+    //     } else if (element.classList.contains('elementRight')) {
+    //         element.style.right = absPosition + 'px';
+    //     } else if (element.classList.contains('elementBottom')) {
+    //         element.style.bottom = absPosition + 'px';
+    //     } else if (element.classList.contains('elementTop')) {
+    //         element.style.top = absPosition + 'px';
+    //     } else if (element.classList.contains('rotateLeft')) {
+    //         element.style.transform = 'rotate(' + rotatePosition / 4 + 'deg)';
+    //     } else if (element.classList.contains('rotateRight')) {
+    //         element.style.transform = 'rotate(' + -rotatePosition / 4 + 'deg)';
+    //     }
+    // }
+
+    // // Function to check if an element is in viewport
+    // function isInViewport(element) {
+    //     const rect = element.getBoundingClientRect();
+    //     return (
+    //         rect.top >= 0 &&
+    //         rect.left >= 0 &&
+    //         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    //         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    //     );
+    // }
+
+    // // Function to handle scroll
+    // function handleScroll() {
+    //     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    //     let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    //     let scrollPosition = scrollTop / scrollHeight;
+
+    //     bannerElements.forEach(element => {
+    //         if (isInViewport(element)) {
+    //             animateElement(element, scrollPosition);
+    //         }
+    //     });
+    // }
+
+    // // Add scroll event listener
+    // window.addEventListener('scroll', handleScroll);
+
+    // // Initial call to set positions
+    // handleScroll();
+
 
 
     // // accordion item

@@ -20,6 +20,10 @@
     font-family: $font-otomanopee !important;
 }
 
+.font-playfair {
+    font-family: $font-playfair !important;
+}
+
 // text color
 .text-primary {
     color: $primary !important;
@@ -868,6 +872,10 @@
     border-color: $n100 !important;
 }
 
+.n100-border1 {
+    border-color: rgba($n100, 0.1) !important;
+}
+
 // .border-2 {
 //     @extend .border;
 //     border-width: 2px !important;
@@ -904,15 +912,15 @@
 //     height: 1px;
 // }
 
-// .list-w-50 {
-//     li {
-//         width: 100%;
+.list-w-50 {
+    li {
+        width: 100%;
 
-//         @include screen(sm) {
-//             width: calc(100% / 2 - 12px);
-//         }
-//     }
-// }
+        @include screen(sm) {
+            width: calc(100% / 2 - 12px);
+        }
+    }
+}
 
 // // letter spacing
 // .letter-space-n2 {
@@ -1041,19 +1049,19 @@
 
 // image transform animation
 .banner-element {
-    &.top {
+    &.elementTop {
         top: 0;
     }
 
-    &.left {
+    &.elementLeft {
         left: 0;
     }
 
-    &.right {
+    &.elementRight {
         right: 0;
     }
 
-    &.bottom {
+    &.elementBottom {
         bottom: 0;
     }
 }

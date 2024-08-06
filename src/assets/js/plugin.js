@@ -201,4 +201,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
     splitAndAnimate(".text-animation-line", "lines", "line", 90, 0.03);
     splitAndAnimate(".text-animation-word", "words", "word", 90, 0.01);
+
+    // Select all elements with the class 'banner-element'
+    const bannerElements = document.querySelectorAll('.banner-element');
+
+    bannerElements.forEach(element => {
+        let tween;
+
+        if (element.classList.contains('elementLeft')) {
+            tween = gsap.to(element, {
+                left: '100%',
+                ease: 'none'
+            });
+        } else if (element.classList.contains('elementRight')) {
+            tween = gsap.to(element, {
+                right: '100%',
+                ease: 'none'
+            });
+        } else if (element.classList.contains('elementBottom')) {
+            tween = gsap.to(element, {
+                bottom: '100%',
+                ease: 'none'
+            });
+        } else if (element.classList.contains('elementTop')) {
+            tween = gsap.to(element, {
+                top: '100%',
+                ease: 'none'
+            });
+        } else if (element.classList.contains('rotateLeft')) {
+            tween = gsap.to(element, {
+                rotation: 45,
+                ease: 'none'
+            });
+        } else if (element.classList.contains('rotateRight')) {
+            tween = gsap.to(element, {
+                rotation: -45,
+                ease: 'none'
+            });
+        }
+
+        if (tween) {
+            ScrollTrigger.create({
+                trigger: element,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+                animation: tween
+            });
+        }
+    });
 })

@@ -1,5 +1,5 @@
 // import google fonts
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @font-face {
     font-family: 'Otomanopee One';
@@ -13,6 +13,8 @@ $font-instrument : "Instrument Sans",
 sans-serif;
 $font-otomanopee : "Otomanopee One",
 sans-serif;
+$font-playfair : "Playfair Display",
+"sans-serif";
 
 
 // color variables

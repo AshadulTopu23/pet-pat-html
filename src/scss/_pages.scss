@@ -1,24 +1,91 @@
-.hero-section {
-    // .bg-banner {
-    //     &::after {
-    //         content: '';
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 100%;
-    //         top: 0;
-    //         left: 0;
-    //         z-index: -1;
-    //         background: $primary2;
-    //         opacity: .85;
-    //     }
-    // }
-    // .hero-banner{
+// .hero-section {
+// .bg-banner {
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         z-index: -1;
+//         background: $primary2;
+//         opacity: .85;
+//     }
+// }
+// .hero-banner{
 
-    //     .hero-thumb{
+//     .hero-thumb{
 
-    //     }
-    // }
+//     }
+// }
+// }
+
+// / service section /
+
+.vector-white {
+    max-width: 120px;
+    width: 100%;
+    max-height: 160px;
 }
+
+.dog-paws {
+    max-width: 80px;
+    max-height: 100px;
+}
+
+.sun-vector {
+    max-width: 130px;
+    max-height: 120px;
+    display: inline-block;
+}
+
+// choose-us
+.choose-us-section {
+    .items-wrapper {
+        // width: 35%;
+
+        // @include screen(md) {
+        position: initial;
+        width: initial;
+        // }
+
+        @include screen(md) {
+            width: 45%;
+            position: absolute;
+            // .icon-area img {
+            //     width: 40px;
+            // }
+        }
+
+        @include screen(lg) {
+            width: 35%;
+        }
+
+        .img-area {
+            @include box(140);
+            background: $n0;
+
+            .icon-area {
+                border: 1px dashed $n10;
+            }
+
+            &:hover {
+                // background: $primary;
+
+                .icon-area {
+                    border-color: $n0;
+
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
 
 // .circle-text-area {
 //     &.style2 {
