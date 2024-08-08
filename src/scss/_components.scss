@@ -58,6 +58,12 @@
             background: $primary;
         }
     }
+
+    &.box-secondary {
+        &::before {
+            background: $secondary;
+        }
+    }
 }
 
 // .btn-outline {
@@ -72,15 +78,15 @@
 //     }
 // }
 
-// .btn-secondary {
-//     @extend .btn-primary;
-//     background: $secondary;
-//     color: $n0;
+.btn-secondary {
+    @extend .btn-primary;
+    background: $secondary;
+    color: $n0;
 
-//     &:hover {
-//         background: $primary;
-//     }
-// }
+    &:hover {
+        background: $primary;
+    }
+}
 
 // .circle-btn {
 //     @include box(48);
@@ -282,20 +288,20 @@
 //     }
 // }
 
-// .focus-primary {
+.focus-primary {
 
-//     &:focus,
-//     &:focus-within,
-//     &:focus-visible {
-//         border-color: $primary !important;
-//     }
-// }
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+        border-color: $primary !important;
+    }
+}
 
-// .focus-secondary {
+.focus-secondary {
 
-//     &:focus,
-//     &:focus-within,
-//     &:focus-visible {
-//         border-color: $secondary !important;
-//     }
-// }
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+        border-color: $secondary !important;
+    }
+}

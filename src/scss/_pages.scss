@@ -85,6 +85,42 @@
     }
 }
 
+// testimonial section
+.testimonial-section {
+    background: url('../assets/images/testimonial-section-bg.png') $primary2 no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .testimonial-swiper {
+        .testimonial-swiper-card {
+            .owner-area {
+                .img-area {
+                    max-width: 420px;
+                    width: 100%;
+                    max-height: 420px;
+                    height: 100%;
+                }
+
+                .rating-area {
+                    // max-width: 160px;
+                    // width: 100%;
+                    // max-height: 160px;
+                    // height: 100%;
+                    @include box(160);
+                }
+            }
+
+            .msg-area {
+                max-width: 550px;
+            }
+        }
+    }
+
+}
+
+// .circle-stripes{
+
+// }
 
 
 // .circle-text-area {

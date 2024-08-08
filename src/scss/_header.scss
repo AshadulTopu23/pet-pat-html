@@ -54,7 +54,7 @@
                     transform: translateY(50px);
                     min-width: max-content;
                     width: 100%;
-                    // background: $primary2;
+                    background: $primary2;
                     padding: 20px;
                     opacity: 0;
                     visibility: hidden;
@@ -196,39 +196,39 @@
         .menu-item {
             display: inline-block;
 
-            // &.active {
-            //     button {
-            //         color: $primary;
+            &.active {
+                button {
+                    color: $primary;
 
-            //         .word {
-            //             .char {
+                    .word {
+                        .char {
 
-            //                 &::after,
-            //                 &::before {
-            //                     color: $primary;
+                            &::after,
+                            &::before {
+                                color: $primary;
 
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
+                            }
+                        }
+                    }
+                }
+            }
 
             .sub-menu {
                 .menu-item {
-                    // button {
-                    //     color: $n800;
+                    button {
+                        color: $n20;
 
-                    //     .word {
-                    //         .char {
+                        .word {
+                            .char {
 
-                    //             &::after,
-                    //             &::before {
-                    //                 color: $n800;
+                                &::after,
+                                &::before {
+                                    color: $n20;
 
-                    //             }
-                    //         }
-                    //     }
-                    // }
+                                }
+                            }
+                        }
+                    }
 
                     &.active {
                         button {
@@ -258,7 +258,7 @@
     @media screen and (max-width: 991px) {
         display: block;
         cursor: pointer;
-        // color: $n800;
+        color: $n20;
         font-size: 20px;
 
     }

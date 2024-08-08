@@ -243,14 +243,17 @@
                 <div class="row g-6 justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <div class="position-relative">
-                            <div class="sun-vector mb-n10">
+                            <div class="sun-vector position-absolute top-0 start-0 translate-middle-x">
                                 <img class="w-100" src="assets/images/sun-vector.png" alt="vector">
                             </div>
                             <div class="about-us-banner position-relative">
-                                <div class="reveal-left position-absolute top-0 start-0 w-100 h-100 z-n1">
-                                    <img class="w-100 h-100" src="assets/images/about-us-bg.png" alt="hero banner">
+                                <div class="position-absolute top-0 end-0 mt-20 z-1">
+                                    <img class="w-100" src="assets/images/rain-drop.png" alt="rain drop">
                                 </div>
-                                <img class="w-100" src="assets/images/about-us-banner.png" alt="about us banner">
+                                <div class="reveal-left">
+                                    <img class="w-100 h-100" src="assets/images/about-section-banner.png"
+                                        alt="hero banner">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -408,7 +411,10 @@
         <section class="pricing-section pt-120 pb-120 bg-secondary3">
             <div class="container">
                 <div class="row justify-content-center mb-lg-15 mb-md-10 mb-8 position-relative">
-                    <div class="col-lg-6 text-center px-lg-0">
+                    <div class="col-lg-6 text-center px-lg-0 position-relative">
+                        <div class="icon-80px position-absolute top-0 end-100 translate-middle-x">
+                            <img class="w-100" src="assets/images/bright-star.png" alt="bright start">
+                        </div>
                         <span class="d-block text-primary text-uppercase mb-lg-4 mb-3">OUR PRICING</span>
                         <h2 class="text-animation-word text-h1 text-center font-otomanopee text-n20 fw-normal">
                             Dog Grooming Services & Pricing.
@@ -490,14 +496,664 @@
         </section>
         <!-- pricing section end  -->
 
+        <!-- testimonial section start -->
+        <section class="testimonial-section pt-120 pb-120">
+            <div class="container">
+                <div class="row align-items-end justify-content-between mb-lg-15 mb-md-10 mb-8">
+                    <div class="col-lg-6">
+                        <span class="d-block text-primary text-uppercase mb-lg-4 mb-3">TESTIMONIAL</span>
+                        <h2 class="text-animation-word text-h1 font-otomanopee text-n20 fw-normal">
+                            Here from Our Happy Pet Owners.
+                        </h2>
+                    </div>
+                    <div class="col-auto">
+                        <div class="swiper-btns d-flex align-items-center">
+                            <button
+                                class="prev-btn testimonial-prev icon-60px border n20-border text-xl text-n20 box-style box-primary">
+                                <i class="ph ph-arrow-left"></i>
+                            </button>
+                            <button
+                                class="next-btn testimonial-next icon-60px border n20-border text-xl text-n20 box-style box-primary">
+                                <i class="ph ph-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="testimonial-swiper-card d-flex align-items-center justify-content-between p-xl-15 p-lg-10 p-md-8 p-6 bg-primary border n20-border radius-pill position-relative">
+                                <div
+                                    class="rain-drop icon-120px radius-unset position-absolute start-50 top-0 translate-middle-x">
+                                    <img class="w-100" src="assets/images/rain-drop.png" alt="rain-drop">
+                                </div>
 
+                                <div class="owner-area position-relative">
+                                    <div class="img-area">
+                                        <img class="w-100" src="assets/images/testimonial-owner-1.png"
+                                            alt="testimonial owner">
+                                    </div>
+                                    <div
+                                        class="rating-area p-2 bg-primary position-absolute start-100 bottom-0 translate-middle-x">
+                                        <div class="bg-primary2 w-100 h-100 radius-circle d-center">
+                                            <div class="text-center">
+                                                <span class="text-h1 text-n20">4.8</span>
+                                                <ul
+                                                    class="d-flex align-items-center justify-content-center gap-1 text-primary">
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                </ul>
+                                                <span class="text-n20 fw-medium">150 Reviews</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="msg-area d-grid gap-lg-6 gap-4 position-relative">
+                                    <div class="quote-icon position-absolute end-0 top-100 translate-middle">
+                                        <img class="w-100" src="assets/images/quote-icon.png" alt="quote icon">
+                                    </div>
+                                    <div class="d-grid gap-lg-4 gap-2">
+                                        <span class="text-h3 text-n20">"Trusted veterinary care"</span>
+                                        <p class="text-n20 fw-normal">
+                                            The facility was clean, well-maintained, and had plenty of space for my dog
+                                            to
+                                            play and socialize with other dogs. The staff was attentive, caring, and
+                                            provided regular updates on my dog's activities. It was clear that they
+                                            treated
+                                            my dog like family. I wouldn't hesitate to board my dog with them again!
+                                        </p>
+                                    </div>
+                                    <div class="d-grid gap-1">
+                                        <span class="text-n20 text-xl fw-semibold">David Warner</span>
+                                        <span class="text-n20 fw-normal">Dog Owner Owner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="testimonial-swiper-card d-flex align-items-center justify-content-between p-xl-15 p-lg-10 p-md-8 p-6 bg-secondary border n20-border radius-pill position-relative">
+                                <div
+                                    class="rain-drop icon-120px radius-unset position-absolute start-50 top-0 translate-middle-x">
+                                    <img class="w-100" src="assets/images/rain-drop.png" alt="rain-drop">
+                                </div>
 
-        <section class="hero-section pt-120 pb-120"></section>
-        <section class="hero-section pt-120 pb-120"></section>
-        <section class="hero-section pt-120 pb-120"></section>
-        <section class="hero-section pt-120 pb-120"></section>
-        <section class="hero-section pt-120 pb-120"></section>
-        <section class="hero-section pt-120 pb-120"></section>
+                                <div class="owner-area position-relative">
+                                    <div class="img-area">
+                                        <img class="w-100" src="assets/images/testimonial-owner-2.png"
+                                            alt="testimonial owner">
+                                    </div>
+                                    <div
+                                        class="rating-area p-2 bg-primary position-absolute start-100 bottom-0 translate-middle-x">
+                                        <div class="bg-primary2 w-100 h-100 radius-circle d-center">
+                                            <div class="text-center">
+                                                <span class="text-h1 text-n20">4.8</span>
+                                                <ul
+                                                    class="d-flex align-items-center justify-content-center gap-1 text-primary">
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                </ul>
+                                                <span class="text-n20 fw-medium">150 Reviews</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="msg-area d-grid gap-lg-6 gap-4 position-relative">
+                                    <div class="quote-icon position-absolute end-0 top-100 translate-middle">
+                                        <img class="w-100" src="assets/images/quote-icon.png" alt="quote icon">
+                                    </div>
+                                    <div class="d-grid gap-lg-4 gap-2">
+                                        <span class="text-h3 text-n20">"A passionate team for pets"</span>
+                                        <p class="text-n20 fw-normal">
+                                            The team is truly goes above and beyond for their furry patients. From the
+                                            moment I walked in, I could feel the warmth and genuine love they have for
+                                            animals. I felt reassured and confident in their expertise. My pet received
+                                            top-notch medical care, and I am grateful for their compassion and
+                                            dedication.
+                                        </p>
+                                    </div>
+                                    <div class="d-grid gap-1">
+                                        <span class="text-n20 text-xl fw-semibold">David Warner</span>
+                                        <span class="text-n20 fw-normal">Dog Owner Owner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="testimonial-swiper-card d-flex align-items-center justify-content-between p-xl-15 p-lg-10 p-md-8 p-6 bg-secondary3 border n20-border radius-pill position-relative">
+                                <div
+                                    class="rain-drop icon-120px radius-unset position-absolute start-50 top-0 translate-middle-x">
+                                    <img class="w-100" src="assets/images/rain-drop.png" alt="rain-drop">
+                                </div>
+
+                                <div class="owner-area position-relative">
+                                    <div class="img-area">
+                                        <img class="w-100" src="assets/images/testimonial-owner-3.png"
+                                            alt="testimonial owner">
+                                    </div>
+                                    <div
+                                        class="rating-area p-2 bg-primary position-absolute start-100 bottom-0 translate-middle-x">
+                                        <div class="bg-primary2 w-100 h-100 radius-circle d-center">
+                                            <div class="text-center">
+                                                <span class="text-h1 text-n20">4.8</span>
+                                                <ul
+                                                    class="d-flex align-items-center justify-content-center gap-1 text-primary">
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                    <li><span><i class="ph-fill ph-star"></i></span></li>
+                                                </ul>
+                                                <span class="text-n20 fw-medium">150 Reviews</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="msg-area d-grid gap-lg-6 gap-4 position-relative">
+                                    <div class="quote-icon position-absolute end-0 top-100 translate-middle">
+                                        <img class="w-100" src="assets/images/quote-icon.png" alt="quote icon">
+                                    </div>
+                                    <div class="d-grid gap-lg-4 gap-2">
+                                        <span class="text-h3 text-n20">"Exceptional experiences"</span>
+                                        <p class="text-n20 fw-normal">
+                                            The facility was clean, well-maintained, and had plenty of space for my dog
+                                            to play and socialize with other dogs. The staff was attentive, caring, and
+                                            provided regular updates on my dog's activities. It was clear that they
+                                            treated my dog like family. I wouldn't hesitate to board my dog with them
+                                            again!
+                                        </p>
+                                    </div>
+                                    <div class="d-grid gap-1">
+                                        <span class="text-n20 text-xl fw-semibold">David Warner</span>
+                                        <span class="text-n20 fw-normal">Dog Owner Owner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial section end -->
+
+        <!-- team section start  -->
+        <section class="team-section pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-center mb-lg-15 mb-md-10 mb-8 position-relative">
+                    <div class="col-lg-6 text-center px-lg-0">
+                        <span class="d-block text-primary text-uppercase mb-lg-4 mb-3">TEAM MEMBERS</span>
+                        <h2 class="text-animation-word text-h1 text-center font-otomanopee text-n20 fw-normal">
+                            Meet Our Experience Pet Care Team
+                        </h2>
+                    </div>
+                    <div class="icon-80px position-absolute start-0 top-100">
+                        <img class="w-100" src="assets/images/spiral-3.png" alt="spiral shape">
+                    </div>
+                </div>
+                <div class="row g-6 mb-lg-15 mb-md-10 mb-8">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card radius-pill position-relative overflow-hidden">
+                            <a href="team-details.html" class="team-member-img shake-animation d-block">
+                                <div class="shake-thumb">
+                                    <img src="./assets/images/team-1.png" alt="..." class="w-100" />
+                                </div>
+                                <div class="shake-thumb">
+                                    <img src="./assets/images/team-1.png" alt="..." class="w-100" />
+                                </div>
+                            </a>
+                            <div
+                                class="team-member-info w-100 d-center py-lg-8 py-md-6 py-4 position-absolute bottom-0 start-0 bg-secondary3 z-1">
+                                <div class="text-center">
+                                    <div class="d-grid gap-2 mb-lg-4 mb-2">
+                                        <a href="team-details.html" class="text-n20 text-h5 hover-text-n0">Pearlie
+                                            Bowman</a>
+                                        <span class="text-n20 fw-normal">Veterinarians</span>
+                                    </div>
+                                    <ul class="d-flex align-items-center justify-content-center gap-2">
+                                        <li><a href="" class="icon-32px bg-n20 text-n0 text-lg box-style box-primary"><i
+                                                    class="ph ph-facebook-logo"></i></a></li>
+                                        <li><a href="" class="icon-32px bg-n20 text-n0 text-lg box-style box-primary"><i
+                                                    class="ph ph-instagram-logo"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card radius-pill position-relative overflow-hidden">
+
+                            <a href="team-details.html" class="team-member-img shake-animation d-block">
+                                <div class="shake-thumb">
+                                    <img src="./assets/images/team-2.png" alt="..." class="w-100" />
+                                </div>
+                                <div class="shake-thumb">
+                                    <img src="./assets/images/team-2.png" alt="..." class="w-100" />
+                                </div>
+                            </a>
+                            <div
+                                class="team-member-info w-100 d-center py-lg-8 py-md-6 py-4 position-absolute bottom-0 start-0 bg-primary z-1">
+                                <div class="text-center">
+                                    <div class="d-grid gap-2 mb-lg-4 mb-2">
+                                        <a href="" class="text-n20 text-h5 hover-text-n0">David Warner</a>
+                                        <span class="text-n20 fw-normal">Pet Groomer</span>
+                                    </div>
+                                    <ul class="d-flex align-items-center justify-content-center gap-2">
+                                        <li><a href="" class="icon-32px bg-n20 text-n0 text-lg box-style box-primary"><i
+                                                    class="ph ph-facebook-logo"></i></a></li>
+                                        <li><a href="" class="icon-32px bg-n20 text-n0 text-lg box-style box-primary"><i
+                                                    class="ph ph-instagram-logo"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card radius-pill position-relative overflow-hidden">
+                            <a href="team-details.html" class="team-member-img shake-animation d-block">
+                                <div class="shake-thumb">
+                                    <img src="./assets/images/team-3.png" alt="..." class="w-100" />
+                                </div>
+                                <div class="shake-thumb">
+                                    <img src="./assets/images/team-3.png" alt="..." class="w-100" />
+                                </div>
+                            </a>
+                            <div
+                                class="team-member-info w-100 d-center py-lg-8 py-md-6 py-4 position-absolute bottom-0 start-0 bg-secondary z-1">
+                                <div class="text-center">
+                                    <div class="d-grid gap-2 mb-lg-4 mb-2">
+                                        <a href="" class="text-n20 text-h5 hover-text-n0">Brooklyn Simmons</a>
+                                        <span class="text-n20 fw-normal">Pet Nutritionist</span>
+                                    </div>
+                                    <ul class="d-flex align-items-center justify-content-center gap-2">
+                                        <li><a href="" class="icon-32px bg-n20 text-n0 text-lg box-style box-primary"><i
+                                                    class="ph ph-facebook-logo"></i></a></li>
+                                        <li><a href="" class="icon-32px bg-n20 text-n0 text-lg box-style box-primary"><i
+                                                    class="ph ph-instagram-logo"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn-primary text-xl">
+                        More Members
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- team section end  -->
+
+        <!-- contact section start -->
+        <section class="contact-section pt-120 pb-120 bg-secondary2">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="contact-form p-xl-12 p-lg-10 p-md-8 p-6 bg-n0 radius-20 border n20-border">
+                            <h3 class="text-n20 fw-normal mb-lg-8 mb-6">Make Your Pet's Appointment</h3>
+                            <form class="d-grid gap-lg-6 gap-4">
+                                <div class="d-lg-flex d-grid align-items-center justify-content-between gap-lg-6 gap-4">
+                                    <div>
+                                        <input type="text" placeholder="Your Name"
+                                            class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Pet Name"
+                                            class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary">
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex d-grid align-items-center justify-content-between gap-lg-6 gap-4">
+                                    <div>
+                                        <input type="email" placeholder="Email Address"
+                                            class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary">
+                                    </div>
+                                    <div>
+                                        <input type="tel" placeholder="Phone"
+                                            class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary">
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex d-grid align-items-center justify-content-between gap-lg-6 gap-4">
+                                    <div class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary"
+                                        data-lenis-prevent>
+                                        <select name="pet-type" id="pet-type" class="w-100 bg-transparent p-0">
+                                            <option value="0">My pet is </option>
+                                            <option value="1">item one</option>
+                                            <option value="2">item two</option>
+                                            <option value="3">item three</option>
+                                            <option value="4">item four</option>
+                                            <option value="5">item five</option>
+                                            <option value="6">item six</option>
+                                            <option value="7">item seven</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary"
+                                        data-lenis-prevent>
+                                        <select name="service" id="service-type" class="w-100 bg-transparent p-0">
+                                            <option value="0">Service</option>
+                                            <option value="2">Option 1</option>
+                                            <option value="3">Option 2</option>
+                                            <option value="4">Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-lg-2 mb-1">
+                                    <textarea name="message"
+                                        class="px-xl-8 px-lg-6 px-md-4 px-3 py-lg-4 py-md-3 py-2 w-100 border n20-border radius-8 focus-primary"
+                                        rows="10" placeholder="Message"></textarea>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input n20-border" type="checkbox" value="">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Make a Video Call
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn-primary radius-8">Make Appointment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="position-relative">
+                            <div class="sun-vector position-absolute top-0 start-0">
+                                <img class="w-100" src="assets/images/sun-vector.png" alt="vector">
+                            </div>
+                            <div class="about-us-banner position-relative">
+                                <div class="circle-stripes position-absolute top-0 end-0 mt-20 z-1">
+                                    <img class="w-100 rotate" src="assets/images/circle-stripes.png" alt="stripes">
+                                </div>
+                                <div class="reveal-left">
+                                    <img class="w-100 h-100" src="assets/images/contact-section-banner.png"
+                                        alt="hero banner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section end -->
+
+        <!-- blogs section start -->
+        <section class="blog-section pt-120 pb-120 bg-primary2">
+            <div class="container">
+                <div class="row align-items-end justify-content-between mb-lg-15 mb-md-10 mb-8">
+                    <div class="col-lg-6">
+                        <span class="d-block text-primary text-uppercase mb-lg-4 mb-3">BLOGS</span>
+                        <h2 class="text-animation-word text-h1 font-otomanopee text-n20 fw-normal">
+                            See Our Pet Services News & Blogs
+                        </h2>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="btn-primary text-xl">
+                            More Members
+                        </a>
+                    </div>
+                </div>
+                <div class="row g-6">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div
+                                class="blog-img scale-animation position-relative radius-20 overflow-hidden mb-lg-7 mb-5">
+                                <img class="w-100" src="assets/images/blog-img-1.png" alt="blog image">
+                                <div class="position-absolute end-0 bottom-0 mb-lg-6 mb-4 me-lg-6 me-4">
+                                    <a href="" class="btn-primary n0-border text-n0 font-instrument">Education Pet</a>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <div class="d-flex align-items-center gap-xl-3 gap-2 mb-lg-3 mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-lg text-primary"><i class="ph ph-calendar-blank"></i></span>
+                                        <span class="text-n20 fw-normal">Feb 16, 2022</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-lg text-primary"><i class="ph ph-user"></i></span>
+                                        <span class="text-n20 fw-normal">By Admin</span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <h4
+                                        class="text-animation-line text-n20 hover-text-primary hover-underline mb-lg-4 mb-3">
+                                        Get Paid To Walk Dogs
+                                    </h4>
+                                </a>
+                                <p class="text-n10 fw-normal">
+                                    Discover essential tips to ensure your pet's health and happiness, from proper
+                                    nutrition
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div
+                                class="blog-img scale-animation position-relative radius-20 overflow-hidden mb-lg-7 mb-5">
+                                <img class="w-100" src="assets/images/blog-img-2.png" alt="blog image">
+                                <div class="position-absolute end-0 bottom-0 mb-lg-6 mb-4 me-lg-6 me-4">
+                                    <a href="" class="btn-primary n0-border text-n0 font-instrument">Medical Care</a>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <div class="d-flex align-items-center gap-xl-3 gap-2 mb-lg-3 mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-lg text-primary"><i class="ph ph-calendar-blank"></i></span>
+                                        <span class="text-n20 fw-normal">Feb 16, 2022</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-lg text-primary"><i class="ph ph-user"></i></span>
+                                        <span class="text-n20 fw-normal">By Admin</span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <h4
+                                        class="text-animation-line text-n20 hover-text-primary hover-underline mb-lg-4 mb-3">
+                                        What Does A Dog Walker Do?
+                                    </h4>
+                                </a>
+                                <p class="text-n10 fw-normal">
+                                    Discover essential tips to ensure your pet's health and happiness, from proper
+                                    nutrition
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div
+                                class="blog-img scale-animation position-relative radius-20 overflow-hidden mb-lg-7 mb-5">
+                                <img class="w-100" src="assets/images/blog-img-3.png" alt="blog image">
+                                <div class="position-absolute end-0 bottom-0 mb-lg-6 mb-4 me-lg-6 me-4">
+                                    <a href="" class="btn-primary n0-border text-n0 font-instrument">Pet Boarding</a>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <div class="d-flex align-items-center gap-xl-3 gap-2 mb-lg-3 mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-lg text-primary"><i class="ph ph-calendar-blank"></i></span>
+                                        <span class="text-n20 fw-normal">Feb 16, 2022</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-lg text-primary"><i class="ph ph-user"></i></span>
+                                        <span class="text-n20 fw-normal">By Admin</span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <h4
+                                        class="text-animation-line text-n20 hover-text-primary hover-underline mb-lg-4 mb-3">
+                                        Walk Your Best doggo friend
+                                    </h4>
+                                </a>
+                                <p class="text-n10 fw-normal">
+                                    Discover essential tips to ensure your pet's health and happiness, from proper
+                                    nutrition
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blogs section end -->
+
+        <!-- footer section start -->
+        <footer class="footer-section pt-120 bg-primary2">
+            <div class="bg-banner position-absolute bottom-0 start-0 w-100 h-100 z-n1">
+                <img class="w-100 h-100" src="assets/images/footer-bg.png" alt="bg banner">
+            </div>
+            <div class="position-absolute top-40 left-0 translate-middle-y">
+                <img class="max-w-200px w-100" src="assets/images/cat-vector-2.png" alt="footer vector">
+            </div>
+            <div class="position-absolute top-15 right-0">
+                <img class="max-w-300px w-100" src="assets/images/dog-vector.png" alt="footer vector">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center mb-lg-20 mb-md-15 mb-10">
+                    <div class="col-xl-7 col-lg-9 text-center">
+                        <div class=" mb-lg-6 mb-4">
+                            <span class="text-h1 fw-normal mb-lg-3 mb-2">Subscribe Our Newsletter</span>
+                            <span class="text-n20">Get the latest deals and offers right to your inbox.</span>
+                        </div>
+                        <form action="#" class="px-xl-15 px-lg-10 px-md-8 px-md-6">
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-3 border n20-border bg-n0 radius-pill p-lg-2 p-1 ps-lg-6 ps-4">
+                                <input type="email" placeholder="Enter your email..."
+                                    class="w-100 bg-transparent border-0 outline-0">
+                                <button type="submit"
+                                    class="btn-secondary border-0 text-n20 fw-semibold text-uppercase font-instrument">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row justify-content-between g-6 pb-lg-20 pb-md-15 pb-10">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-logo mb-lg-6 mb-4">
+                            <a href="index.html">
+                                <img class="w-100" src="assets/images/logo.png" alt="footer logo">
+                            </a>
+                        </div>
+                        <p class="text-n20 fw-normal mb-lg-6 mb-4">
+                            PetPath offers exceptional pet care services including grooming, boarding, and Our dedicated
+                            team.
+                        </p>
+                        <ul class="d-flex align-items-center gap-lg-2 gap-1">
+                            <li>
+                                <a href="#" class="icon-40px border n20-border text-xl box-style box-secondary">
+                                    <i class="ph-fill ph-facebook-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-40px border n20-border text-xl box-style box-secondary">
+                                    <i class="ph-fill ph-twitter-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-40px border n20-border text-xl box-style box-secondary">
+                                    <i class="ph-fill ph-instagram-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-40px border n20-border text-xl box-style box-secondary">
+                                    <i class="ph-fill ph-youtube-logo"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer-menu">
+                            <h5 class="text-n20 fw-normal mb-lg-6 mb-4">Pages</h5>
+                            <ul class="d-grid gap-lg-4 gap-2">
+                                <li>
+                                    <a href="index.html"
+                                        class="text-n20 fw-normal hover-text-secondary hover-underline">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html"
+                                        class="text-n20 fw-normal hover-text-secondary hover-underline">About </a>
+                                </li>
+                                <li>
+                                    <a href="services.html"
+                                        class="text-n20 fw-normal hover-text-secondary hover-underline">Services</a>
+                                </li>
+                                <li>
+                                    <a href="team.html"
+                                        class="text-n20 fw-normal hover-text-secondary hover-underline">Team</a>
+                                </li>
+                                <li>
+                                    <a href="blogs.html"
+                                        class="text-n20 fw-normal hover-text-secondary hover-underline">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer-menu">
+                            <h5 class="text-n20 fw-normal mb-lg-6 mb-4">Contact Info</h5>
+                            <ul class="d-grid gap-lg-4 gap-2">
+                                <li>
+                                    <a href="#"
+                                        class="d-flex align-items-center gap-2 text-n20 fw-normal hover-text-secondary hover-underline">
+                                        <span class="text-xl"><i class="ph ph-map-pin"></i></span>
+                                        California L.A 57867
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="d-flex align-items-center gap-2 text-n20 fw-normal hover-text-secondary hover-underline">
+                                        <span class="text-xl"><i class="ph ph-phone-call"></i></span>
+                                        (808) 555-0111
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="d-flex align-items-center gap-2 text-n20 fw-normal hover-text-secondary hover-underline">
+                                        <span class="text-xl"><i class="ph ph-envelope-open"></i></span>
+                                        0Vw5f@example.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div
+                            class="working-time-card p-xl-10 p-lg-8 p-md-6 p-4 radius-20 bg-secondary border n20-border">
+                            <h5 class="text-n20 fw-normal mb-lg-6 mb-4">Working Hours</h5>
+                            <ul class="d-grid gap-lg-4 gap-2">
+                                <li class="d-flex align-items-center justify-content-between gap-2">
+                                    <span class="text-n20 fw-normal">Mon - Fri:</span>
+                                    <span class="text-n20 fw-medium">7am - 6pm</span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between gap-2">
+                                    <span class="text-n20 fw-normal">Saturday:</span>
+                                    <span class="text-n20 fw-medium">9am - 4pm</span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between gap-2">
+                                    <span class="text-n20 fw-normal">Sunday:</span>
+                                    <span class="text-n20 fw-medium text-primary">Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span class="d-block border-bottom n100-border1"></span>
+                <div class="py-lg-6 py-4 text-center">
+                    <span class="text-n20 fw-normal"> © 2022 - <span class="currentYear"></span> | Allrights reserved by
+                        <a href="index.html"
+                            class="fw-semibold text-decoration-underline hover-text-secondary">Pixelaxis</a></span>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
     </main>
     <!-- main end -->
 

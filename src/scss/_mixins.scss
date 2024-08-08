@@ -29,3 +29,98 @@ $screen: ( // screen sizes in px
   align-items: center;
   justify-content: center;
 }
+
+// translate style
+// Generate top, bottom, left, and right classes using loops
+$positions: top,
+bottom,
+left,
+right;
+$percentages:0,
+5,
+10,
+15,
+20,
+25,
+30,
+35,
+40,
+45,
+50,
+55,
+60,
+65,
+70,
+75,
+80,
+85,
+90,
+95,
+100;
+
+@each $position in $positions {
+  @each $percentage in $percentages {
+    .#{$position}-#{$percentage} {
+      #{$position}: #{$percentage + '%'} !important;
+    }
+  }
+}
+
+// Generate responsive top, bottom, left, and right classes using loops
+@each $breakpoint,
+$value in $screen {
+  @include screen(#{$breakpoint}) {
+    @each $position in $positions {
+      @each $percentage in $percentages {
+        .#{$position}-#{$breakpoint}-#{$percentage} {
+          #{$position}: #{$percentage + '%'} !important;
+        }
+      }
+    }
+  }
+}
+
+// Generate negative top, bottom, left, and right classes using loops
+@each $position in $positions {
+  @each $percentage in $percentages {
+    .#{$position}-#{'n' + $percentage} {
+      #{$position}: #{-$percentage + '%'} !important;
+    }
+  }
+}
+
+// Generate responsive negative top, bottom, left, and right classes using loops
+@each $breakpoint,
+$value in $screen {
+  @include screen(#{$breakpoint}) {
+    @each $position in $positions {
+      @each $percentage in $percentages {
+        .#{$position}-#{$breakpoint}-#{'n' + $percentage} {
+          #{$position}: #{-$percentage + '%'} !important;
+        }
+      }
+    }
+  }
+}
+
+// width style
+$widths: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+// Generate width classes for percentages
+@each $width in $widths {
+  .w-#{$width} {
+    width: #{$width + '%'};
+  }
+}
+
+// Generate responsive width classes
+@each $breakpoint,
+$value in $screen {
+  @include screen(#{$breakpoint}) {
+    @each $width in $widths {
+      .w-#{$breakpoint}-#{$width} {
+        width: #{$width + '%'};
+      }
+    }
+  }
+}
